@@ -18,7 +18,13 @@ const createStore = () => {
                 firstName: '',
                 lastName: ''
             },
-            wod: {}
+            wod: {
+                name: '',
+                workoutId: '',
+                steps: [],
+                type: '',
+                notes: ''
+            }
         },
         mutations: {
             setWorkouts(state, workouts) {
