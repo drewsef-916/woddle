@@ -4,7 +4,7 @@ import 'firebase/auth'
 
 if (!firebase.apps.length) {    
     const config = {
-    apiKey: process.env.firebaseAPIKey,
+    apiKey: 'AIzaSyCXsgUt1QbcMcdrd6WUhXETYA3 - TjEKv5g',
     authDomain: "woddle-739d9.firebaseapp.com",
     databaseURL: "https://woddle-739d9.firebaseio.com",
     projectId: "woddle-739d9",
@@ -19,8 +19,6 @@ if (!firebase.apps.length) {
 const fireDbDate = firebase.firestore.Timestamp;
 const fireDb = firebase.firestore()
 const fireBaseAuth = firebase.auth();
-// const fireStorage = firebase.storage();
-// const storageRef = fireStorage.ref();
 
 
 export { fireDbDate, fireDb, fireBaseAuth }

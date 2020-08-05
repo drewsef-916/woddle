@@ -92,7 +92,5 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
-  env: {
-    firebaseAPIKey: 'AIzaSyCXsgUt1QbcMcdrd6WUhXETYA3-TjEKv5g'
-  }
+  env: {}
 };
