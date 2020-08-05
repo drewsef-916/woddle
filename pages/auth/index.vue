@@ -50,7 +50,6 @@ export default {
             }
         },
         signOut() {
-            console.log('signing out user...');
             this.$store.dispatch('signOutUser').then(() => this.$router.push('/'));
         }
     },

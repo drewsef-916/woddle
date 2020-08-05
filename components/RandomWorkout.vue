@@ -19,7 +19,6 @@ export default {
     },
     computed: {
         workoutOfTheDay() {
-            console.log(this.$store.state.wod);
             return this.$store.state.wod;
         }
     },

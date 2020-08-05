@@ -28,7 +28,6 @@ export default {
                 let scoreWithWorkout = {};
                 // const {name, notes, steps, type} = this.$store.state.loadedWorkouts.filter(workout => workout.workoutId === score.workoutId);
                 const matchedWorkout = this.$store.state.loadedWorkouts.filter(workout => workout.workoutId === score.workoutId);
-                console.log('Workout with Score', matchedWorkout);
             });
             return this.$store.state.userScores;
         }
