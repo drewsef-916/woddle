@@ -28,7 +28,7 @@ export default {
   created() {
     this.$store.dispatch('getWorkouts');
     // console.log(window.FB.getLoginStatus());
-    window.FB.getLoginStatus(res => this.$store.checkFBLogin(res));
+    window.FB.getLoginStatus(res => this.$store.dispatch(`checkFBLogin(${res})`));
     // this.$store.dispatch('checkFacebookLogin');
   }
 }
