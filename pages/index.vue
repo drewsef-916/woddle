@@ -11,7 +11,8 @@
     >
       <div class="text-center">
         <h1 class="home-title">Welcome to Woddle</h1>
-        <h4>Track workouts, make progress!</h4>
+        <h4 class="home-subtitle">Track workouts, make progress!</h4>
+        <div class="fb-login-button" data-size="medium" data-button-type="login_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="false" data-width=""></div>
       </div>
     </v-flex>
   </v-layout>
@@ -26,6 +27,9 @@ export default {
   },
   created() {
     this.$store.dispatch('getWorkouts');
+    // console.log(window.FB.getLoginStatus());
+    window.FB.getLoginStatus(res => this.$store.checkFBLogin(res));
+    // this.$store.dispatch('checkFacebookLogin');
   }
 }
 </script>
@@ -40,5 +44,8 @@ export default {
   .home-title {
     font-size: 4em;
     color: #03dffc;
+  }
+  .home-subtitle {
+    padding-bottom: 1em;
   }
 </style>
