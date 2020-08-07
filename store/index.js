@@ -156,10 +156,6 @@ const createStore = () => {
                 })
                 .catch(err => console.log("getUserDetails error", err))
             },
-            checkFBLogin(context, authStatus) {
-                console.log('User connection status: ', authStatus.status);
-                console.log(authStatus.authResponse);
-            }
         },
         getters: {}
     })
