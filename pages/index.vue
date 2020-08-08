@@ -12,7 +12,6 @@
       <div class="text-center">
         <h1 class="home-title">Welcome to Woddle</h1>
         <h4 class="home-subtitle">Track workouts, make progress!</h4>
-        <div class="fb-login-button" data-size="medium" data-button-type="login_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="false" data-width=""></div>
       </div>
     </v-flex>
   </v-layout>
